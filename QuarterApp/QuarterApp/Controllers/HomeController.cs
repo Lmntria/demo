@@ -19,6 +19,8 @@ namespace QuarterApp.Controllers
 			HomeVM homeVM = new HomeVM
 			{
 				Sliders =_context.Sliders.OrderBy(X=>X.Order).ToList(),
+				Cities=_context.Cities.ToList(),
+				Categories=_context.Categories.ToList(),
 			};
 			return View(homeVM);
 		}

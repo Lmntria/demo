@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YtcAb3yf2nb8te6wKF6oUhj1+8YRVGxkaDsjOCjaO68=",
+  "Hash": "j4ZQB8VIak6I/xV8sugG2usqwd+ekXaWZPJmL6qSdMI=",
   "Source": "QuarterApp",
   "BasePath": "_content/QuarterApp",
   "Mode": "Default",
@@ -7614,6 +7614,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manage\\js\\jquery.cookie.js"
+    },
+    {
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\manage\\js\\main.js",
+      "SourceId": "QuarterApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
+      "BasePath": "_content/QuarterApp",
+      "RelativePath": "manage/js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\manage\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\manage\\js\\misc.js",

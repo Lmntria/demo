@@ -1,0 +1,77 @@
+﻿@model Slider
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Tables</li>
+                    <li class="breadcrumb-item">Slider Table</li>
+                    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Edit</h4>
+                        <form method="post">
+                            <div class="form-group">
+                                <label asp-for="Order">Order</label>
+                                <input asp-for="Order" class="form-control">
+                                <span class="text-danger" asp-validation-for="Order"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Tittle1">Tittle1</label>
+                                <input asp-for="Tittle1" class="form-control">
+                                <span class="text-danger" asp-validation-for="Tittle1"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Tittle2">Tittle2</label>
+                                <input asp-for="Tittle2" class="form-control">
+                                <span class="text-danger" asp-validation-for="Tittle2"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Desc">Description</label>
+                                <textarea asp-for="Desc" class="form-control"></textarea>
+                                <span class="text-danger" asp-validation-for="Desc"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="FirstBtnText">FirstBtnText</label>
+                                <input asp-for="FirstBtnText" class="form-control">
+                                <span class="text-danger" asp-validation-for="FirstBtnText"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="FirstBtnUrl">Name</label>
+                                <input asp-for="FirstBtnUrl" class="form-control">
+                                <span class="text-danger" asp-validation-for="FirstBtnUrl"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="SecondBtnText">SecondBtnText</label>
+                                <input asp-for="SecondBtnText" class="form-control">
+                                <span class="text-danger" asp-validation-for="SecondBtnText"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="SecondBtnUrl">SecondBtnUrl</label>
+                                <input asp-for="SecondBtnUrl" class="form-control">
+                                <span class="text-danger" asp-validation-for="SecondBtnUrl"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="ImageFile">Image</label>
+                                <input asp-for="ImageFile" class="form-control">
+                                <span class="text-danger" asp-validation-for="ImageFile"></span>
+                            </div>
+                            <button type="submit" class="btn btn-gradient-primary">Edit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main-panel ends -->
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                        }

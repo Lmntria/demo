@@ -1785,6 +1785,10 @@
       "PackagePath": "staticwebassets\\manage\\js\\jquery.cookie.js"
     },
     {
+      "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\manage\\js\\main.js",
+      "PackagePath": "staticwebassets\\manage\\js\\main.js"
+    },
+    {
       "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\manage\\js\\misc.js",
       "PackagePath": "staticwebassets\\manage\\js\\misc.js"
     },

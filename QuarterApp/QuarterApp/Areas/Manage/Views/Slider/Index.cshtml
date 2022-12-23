@@ -1,0 +1,47 @@
+﻿@model List<Slider>
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title"> Category Table </h3>
+            <a class="btn btn-primary" asp-action="create" asp-controller="slider">Create</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body overflow-auto">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Order</th>
+                                    <th>Tittle1</th>
+                                    <th>Tittle2</th>
+                                    <th>Desc</th>
+                                    <th>Image</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var slider in Model)
+                                {
+                                    <tr>
+                                        <td>@slider.Order</td>
+                                        <td>@slider.Tittle1</td>
+                                        <td>@slider.Tittle2</td>
+                                        <td>@slider.Desc</td>
+                                        <td><img width="200" src="~/assets/img/slider/@slider.Image" /></td>
+                                        <td>
+                                            <a asp-action="edit" asp-route-id="@slider.Id" class="btn btn-success"><i class="las la-edit"></i></a>
+                                            <a asp-action="delete" asp-route-id="@slider.Id" class="btn btn-danger delete-btn"><i class="las la-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main-panel ends -->

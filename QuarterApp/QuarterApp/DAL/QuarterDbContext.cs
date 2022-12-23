@@ -11,5 +11,9 @@ namespace QuarterApp.DAL
 		}
 
 		public DbSet<Slider> Sliders { get; set; }
+		public DbSet<City> Cities { get; set; }
+		public DbSet<Category> Categories { get; set; }
+		public DbSet<SaleManager> SaleManagers { get; set; }
+		public DbSet<Setting> Settings { get; set; }
 	}
 }

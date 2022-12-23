@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using QuarterApp.Attributes.ValidationAttributes;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuarterApp.Models
 {
@@ -20,7 +22,11 @@ namespace QuarterApp.Models
 		[MaxLength(100)]
 		public string? SecondBtnUrl { get; set;}
 		[MaxLength(100)]
-		public string Image { get; set; }
+		public string? Image { get; set; }
         public byte Order { get; set; }
+		[NotMapped]
+		[AllowedFileType("image/png", "image/jpeg")]
+		[MaxFileSize(3)]
+        public IFormFile? ImageFile { get; set; }
     }
 }

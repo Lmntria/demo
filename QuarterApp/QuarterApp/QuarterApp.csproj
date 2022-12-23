@@ -16,8 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Manage\Data\" />
-    <Folder Include="Areas\Manage\Models\" />
+    <Folder Include="wwwroot\uploads\houses\" />
+    <Folder Include="wwwroot\uploads\users\" />
+    <Folder Include="wwwroot\uploads\saleManager\" />
   </ItemGroup>
 
 </Project>
