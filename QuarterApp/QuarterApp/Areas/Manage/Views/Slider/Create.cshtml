@@ -7,7 +7,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">Tables</li>
                     <li class="breadcrumb-item">Slider Table</li>
-                    <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                    <li class="breadcrumb-item active" aria-current="page">Create</li>
                 </ol>
             </nav>
         </div>
@@ -15,11 +15,11 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Edit</h4>
-                        <form method="post">
+                        <h4 class="card-title">Create</h4>
+                        <form asp-action="create" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label asp-for="Order">Order</label>
-                                <input asp-for="Order" class="form-control">
+                                <input asp-for="Order" value="@ViewBag.Order" class="form-control">
                                 <span class="text-danger" asp-validation-for="Order"></span>
                             </div>
                             <div class="form-group">
@@ -43,7 +43,7 @@
                                 <span class="text-danger" asp-validation-for="FirstBtnText"></span>
                             </div>
                             <div class="form-group">
-                                <label asp-for="FirstBtnUrl">Name</label>
+                                <label asp-for="FirstBtnUrl">FirstBtnUrl</label>
                                 <input asp-for="FirstBtnUrl" class="form-control">
                                 <span class="text-danger" asp-validation-for="FirstBtnUrl"></span>
                             </div>
@@ -62,7 +62,7 @@
                                 <input asp-for="ImageFile" class="form-control">
                                 <span class="text-danger" asp-validation-for="ImageFile"></span>
                             </div>
-                            <button type="submit" class="btn btn-gradient-primary">Edit</button>
+                            <button type="submit" class="btn btn-gradient-primary">Create</button>
                         </form>
                     </div>
                 </div>

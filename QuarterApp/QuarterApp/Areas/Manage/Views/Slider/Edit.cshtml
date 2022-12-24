@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">Edit</h4>
-                        <form method="post">
+                        <form method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label asp-for="Order">Order</label>
                                 <input asp-for="Order" class="form-control">
@@ -61,6 +61,7 @@
                                 <label asp-for="ImageFile">Image</label>
                                 <input asp-for="ImageFile" class="form-control">
                                 <span class="text-danger" asp-validation-for="ImageFile"></span>
+                                <img class="my-3" width="200" src="~/uploads/sliders/@Model.Image" />
                             </div>
                             <button type="submit" class="btn btn-gradient-primary">Edit</button>
                         </form>

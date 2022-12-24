@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j4ZQB8VIak6I/xV8sugG2usqwd+ekXaWZPJmL6qSdMI=",
+  "Hash": "ValMoq8F99eN6hbu9czhR2WOAM+v5Sw7sqpu9P2Kt2g=",
   "Source": "QuarterApp",
   "BasePath": "_content/QuarterApp",
   "Mode": "Default",
@@ -5185,23 +5185,6 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\img\\slider\\21.jpeg",
-      "SourceId": "QuarterApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
-      "BasePath": "_content/QuarterApp",
-      "RelativePath": "assets/img/slider/21.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\21.jpeg"
-    },
-    {
       "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\img\\slider\\22.png",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
@@ -8583,6 +8566,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\manage\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg",
+      "SourceId": "QuarterApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
+      "BasePath": "_content/QuarterApp",
+      "RelativePath": "uploads/sliders/02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\21.jpeg",
+      "SourceId": "QuarterApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
+      "BasePath": "_content/QuarterApp",
+      "RelativePath": "uploads/sliders/21.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\21.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg",
+      "SourceId": "QuarterApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
+      "BasePath": "_content/QuarterApp",
+      "RelativePath": "uploads/sliders/e80baa08-5408-4d19-97ef-d4118352e272image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg"
     }
   ]
 }
