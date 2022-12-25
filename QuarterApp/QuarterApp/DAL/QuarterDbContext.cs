@@ -15,5 +15,7 @@ namespace QuarterApp.DAL
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<SaleManager> SaleManagers { get; set; }
 		public DbSet<Setting> Settings { get; set; }
+		public DbSet<HouseImage> HouseImages { get; set; }
+		public DbSet<House> Houses { get; set; }
 	}
 }

@@ -7,5 +7,6 @@ namespace QuarterApp.Models
         public int Id { get; set; }
         [MaxLength(60)]
         public string Name { get; set; }
+        public List<House>? Houses { get; set; }
     }
 }

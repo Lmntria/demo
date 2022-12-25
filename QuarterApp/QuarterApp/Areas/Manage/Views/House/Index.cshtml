@@ -1,0 +1,61 @@
+﻿@model List<House>
+@{
+    int counter = 0;
+}
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">House Table </h3>
+            <a class="btn btn-primary" asp-action="create" asp-controller="house">Create</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body overflow-auto">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>City</th>
+                                    <th>Category</th>
+                                    <th>Manager</th>
+                                    <th>Sale Price</th>
+                                    <th>Cost Price</th>
+                                    <th>Discount Perceint</th>
+                                    <th>Stock Status</th>
+                                    <th>Poster Image</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var house in Model)
+                                {
+                                    counter++;
+                                    <tr>
+                                        <td>@counter</td>
+                                        <td>@house.Name</td>
+                                        <td>@house.City.Name</td>
+                                        <td>@house.Category.Name</td>
+                                        <td>@house.Manager.Fullname</td>
+                                        <td>@house.SalePrice</td>
+                                        <td>@house.CostPrice</td>
+                                        <td>@house.DiscountPercantage</td>
+                                        <td>@house.StockStatus</td>
+                                        <td><img width="100" src="~/uploads/houses/@(house.HouseImages.FirstOrDefault(x=>x.PosterStatus==true)?.Name)" /></td>
+                                        <td>
+                                            <a asp-action="edit" asp-route-id="@house.Id" class="btn btn-success"><i class="las la-edit"></i></a>
+                                            <a asp-action="delete" asp-route-id="@house.Id" class="btn btn-danger delete-btn"><i class="las la-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main-panel ends -->
