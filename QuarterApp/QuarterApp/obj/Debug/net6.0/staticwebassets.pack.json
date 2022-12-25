@@ -2009,16 +2009,12 @@
       "PackagePath": "staticwebassets\\manage\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg",
-      "PackagePath": "staticwebassets\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg"
+      "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\saleManager\\MAltman.jpg",
+      "PackagePath": "staticwebassets\\uploads\\saleManager\\MAltman.jpg"
     },
     {
       "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\21.jpeg",
       "PackagePath": "staticwebassets\\uploads\\sliders\\21.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg",
-      "PackagePath": "staticwebassets\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.QuarterApp.Microsoft.AspNetCore.StaticWebAssets.props",

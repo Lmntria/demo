@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ValMoq8F99eN6hbu9czhR2WOAM+v5Sw7sqpu9P2Kt2g=",
+  "Hash": "MqkCOcuGC3HnyeOZfzI8wltYpffw5orHKAOr3D+Lmuw=",
   "Source": "QuarterApp",
   "BasePath": "_content/QuarterApp",
   "Mode": "Default",
@@ -8568,12 +8568,12 @@
       "OriginalItemSpec": "wwwroot\\manage\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg",
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\saleManager\\MAltman.jpg",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
       "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/sliders/02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg",
+      "RelativePath": "uploads/saleManager/MAltman.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8582,7 +8582,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\02e65b21-c2ec-4762-9fb2-6c0a14d4f105villa.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\saleManager\\MAltman.jpg"
     },
     {
       "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\21.jpeg",
@@ -8600,23 +8600,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\sliders\\21.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg",
-      "SourceId": "QuarterApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
-      "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/sliders/e80baa08-5408-4d19-97ef-d4118352e272image.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\sliders\\e80baa08-5408-4d19-97ef-d4118352e272image.jpg"
     }
   ]
 }

@@ -11,8 +11,8 @@ using QuarterApp.DAL;
 namespace QuarterApp.Migrations
 {
     [DbContext(typeof(QuarterDbContext))]
-    [Migration("20221223182213_SaleManagerAndSettingTableCreated")]
-    partial class SaleManagerAndSettingTableCreated
+    [Migration("20221225005737_ImageSettedAsNullableInSaleManager")]
+    partial class ImageSettedAsNullableInSaleManager
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,8 +61,11 @@ namespace QuarterApp.Migrations
 
             modelBuilder.Entity("QuarterApp.Models.SaleManager", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -73,6 +76,10 @@ namespace QuarterApp.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Image")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
@@ -126,7 +133,6 @@ namespace QuarterApp.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
