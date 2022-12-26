@@ -1,0 +1,49 @@
+﻿@model List<Setting>
+@{
+    int counter = 0;
+}
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title"> Basic Tables </h3>
+            <a class="btn btn-primary" asp-action="create" asp-controller="setting">Create</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Setting Table</h4>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Key</th>
+                                    <th>Value</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var setting in Model)
+                                {
+                                    counter++;
+                                    <tr>
+                                        <td>@counter</td>
+                                        <td>@setting.Key</td>
+                                        <td>@setting.Value</td>
+
+                                        <td>
+                                            <a asp-action="edit" asp-route-id="@setting.Id" class="btn btn-success"><i class="las la-edit"></i></a>
+                                            <a asp-action="delete" asp-route-id="@setting.Id" class="btn btn-danger delete-btn"><i class="las la-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main-panel ends -->
