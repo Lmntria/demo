@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ceay8rINdbJtyfRm9xkxxuDQdbPOQxS6lkgEhWePzKo=",
+  "Hash": "KGJICt+nY6fDsMIKuhl5HSTj6oHZCI7AX2Xkd1D+6n8=",
   "Source": "QuarterApp",
   "BasePath": "_content/QuarterApp",
   "Mode": "Default",
@@ -8568,12 +8568,12 @@
       "OriginalItemSpec": "wwwroot\\manage\\vendors\\mdi\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\19928a29-7dc3-4272-b895-096ed4aff11dhouse5.jpg",
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
       "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/houses/19928a29-7dc3-4272-b895-096ed4aff11dhouse5.jpg",
+      "RelativePath": "uploads/houses/094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8582,15 +8582,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\houses\\19928a29-7dc3-4272-b895-096ed4aff11dhouse5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\houses\\094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\3f420d7e-c346-424b-a1fc-be28540342fahouse5.jpg",
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
       "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/houses/3f420d7e-c346-424b-a1fc-be28540342fahouse5.jpg",
+      "RelativePath": "uploads/houses/42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8599,15 +8599,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\houses\\3f420d7e-c346-424b-a1fc-be28540342fahouse5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\houses\\42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\60af164f-d185-47fe-8d3a-c6bf19600aedhouse5.jpg",
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
       "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/houses/60af164f-d185-47fe-8d3a-c6bf19600aedhouse5.jpg",
+      "RelativePath": "uploads/houses/654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8616,15 +8616,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\houses\\60af164f-d185-47fe-8d3a-c6bf19600aedhouse5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\houses\\654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg"
     },
     {
-      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\b40f2f3d-6690-4416-ad3c-425d9dacc82bhouse5.jpg",
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\houses\\e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg",
       "SourceId": "QuarterApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
       "BasePath": "_content/QuarterApp",
-      "RelativePath": "uploads/houses/b40f2f3d-6690-4416-ad3c-425d9dacc82bhouse5.jpg",
+      "RelativePath": "uploads/houses/e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8633,7 +8633,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\houses\\b40f2f3d-6690-4416-ad3c-425d9dacc82bhouse5.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\houses\\e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg"
     },
     {
       "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\uploads\\saleManager\\35d53af8-dcf5-4176-a51a-37b834249345JAltman.jpg",

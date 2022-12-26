@@ -35,6 +35,7 @@ namespace QuarterApp.Areas.Manage.Controllers
             ViewBag.City = _context.Cities.ToList();
             ViewBag.Category = _context.Categories.ToList();
             ViewBag.Manager = _context.SaleManagers.ToList();
+            ViewBag.Amenities = _context.Amenities.ToList();
             return View();
         }
         [HttpPost]
@@ -55,6 +56,8 @@ namespace QuarterApp.Areas.Manage.Controllers
                 ViewBag.City = _context.Cities.ToList();
                 ViewBag.Category = _context.Categories.ToList();
                 ViewBag.Manager = _context.SaleManagers.ToList();
+                ViewBag.Amenities = _context.Amenities.ToList();
+
                 return View();
             }
 
@@ -91,6 +94,8 @@ namespace QuarterApp.Areas.Manage.Controllers
             ViewBag.City = _context.Cities.ToList();
             ViewBag.Category = _context.Categories.ToList();
             ViewBag.Manager = _context.SaleManagers.ToList();
+            ViewBag.Amenities = _context.Amenities.ToList();
+
 
             var house = _context.Houses.Include(x=>x.HouseImages).FirstOrDefault(x => x.Id == id);
                 
@@ -110,6 +115,8 @@ namespace QuarterApp.Areas.Manage.Controllers
                 ViewBag.City = _context.Cities.ToList();
                 ViewBag.Category = _context.Categories.ToList();
                 ViewBag.Manager = _context.SaleManagers.ToList();
+                ViewBag.Amenities = _context.Amenities.ToList();
+
                 return View();
             }
 

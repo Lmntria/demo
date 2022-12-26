@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\seymu\Desktop\BackEnd_Project\QuarterApp\QuarterApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/Amenity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFtZW5pdHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/Amenity/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFtZW5pdHlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/Amenity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFtZW5pdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXENhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +58,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/HouseAmenities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvdXNlQW1lbml0aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/HouseAmenities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvdXNlQW1lbml0aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/HouseAmenities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEhvdXNlQW1lbml0aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/seymu/Desktop/BackEnd_Project/QuarterApp/QuarterApp/Areas/Manage/Views/House/Create.cshtml]

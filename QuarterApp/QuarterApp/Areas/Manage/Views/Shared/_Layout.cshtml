@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="~/manage/css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="~/manage/images/favicon.ico" />
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="~/assets/img/favicon.png" type="image/x-icon" />
+    <!-- Font Icons css -->
+    <link rel="stylesheet" href="~/assets/css/font-icons.css">
 </head>
 <body>
     <div class="container-scroller">
@@ -185,7 +189,7 @@
             <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">
-                        <a href="#" class="nav-link">
+                        <a asp-action="index" asp-controller="dashboard" class="nav-link">
                             <div class="nav-profile-image">
                                 <img src="~/manage/images/faces/face1.jpg" alt="profile">
                                 <span class="login-status online"></span>
@@ -199,7 +203,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" asp-action="index" asp-controller="dashboard">
                             <span class="menu-title">Dashboard</span>
                             <i class="mdi mdi-home menu-icon"></i>
                         </a>
@@ -212,13 +216,14 @@
                         </a>
                         <div class="collapse" id="general-pages">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="slider"> Slider </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="house"> House </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="salemanager"> Sale Manager </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="city"> City </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="setting"> Setting </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="category"> Categorie </a></li>
-
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="slider"> Sliders </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="house"> Houses </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="salemanager"> Sale Managers </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="city"> Cities </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="setting"> Settings </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="category"> Categories </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="amenity"> Amenities </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-action="index" asp-controller="HouseAmenities"> HouseAmenities </a></li>
                             </ul>
                         </div>
                     </li>

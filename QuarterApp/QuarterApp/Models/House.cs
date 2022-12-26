@@ -47,5 +47,7 @@ namespace QuarterApp.Models
         [NotMapped]
         [MaxFileSize(3)]
         public List<IFormFile>? ImageFiles { get; set; }
+
+        public List<HouseAmenity>? HouseAmenities { get; set; }
     }
 }
