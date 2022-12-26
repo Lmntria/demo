@@ -73,7 +73,7 @@ namespace QuarterApp.Areas.Manage.Controllers
             {
                 HouseImage houseImage = new HouseImage
                 {
-                    Name = FileManager.Save(house.PosterImage, _env.WebRootPath, "uploads/houses"),
+                    Name = FileManager.Save(imgFile, _env.WebRootPath, "uploads/houses"),
                     PosterStatus = false
                 };
                 house.HouseImages.Add(houseImage);
@@ -83,21 +83,121 @@ namespace QuarterApp.Areas.Manage.Controllers
             _context.Houses.Add(house);
             _context.SaveChanges();
 
-            return Ok(house);
+            return RedirectToAction("index");
         }
 
         public IActionResult Edit(int id)
         {
-            return View();
+            ViewBag.City = _context.Cities.ToList();
+            ViewBag.Category = _context.Categories.ToList();
+            ViewBag.Manager = _context.SaleManagers.ToList();
+
+            var house = _context.Houses.Include(x=>x.HouseImages).FirstOrDefault(x => x.Id == id);
+                
+            if (house == null)
+                return RedirectToAction("error", "dashboard");
+
+
+            return View(house);
         }
-        [HttpPost]
+        [HttpPost]  
         public IActionResult Edit(House house)
         {
-            return View();
+            _checkImageFiles(house.PosterImage, house.ImageFiles);
+
+            if (!ModelState.IsValid)
+            {
+                ViewBag.City = _context.Cities.ToList();
+                ViewBag.Category = _context.Categories.ToList();
+                ViewBag.Manager = _context.SaleManagers.ToList();
+                return View();
+            }
+
+            var existhouse = _context.Houses.Include(x=>x.HouseImages).FirstOrDefault(x => x.Id == house.Id);
+
+            if (existhouse == null)
+                return RedirectToAction("error", "dashboard");
+
+            if (house.PosterImage != null)
+            {
+                var poster = existhouse.HouseImages.FirstOrDefault(x => x.PosterStatus = true);
+
+                var newimageName = FileManager.Save(house.PosterImage, _env.WebRootPath, "uploads/houses");
+
+                FileManager.Delete(_env.WebRootPath, "uploads/houses", poster.Name);
+
+                poster.Name = newimageName; 
+            }
+
+            var removedFiles = existhouse.HouseImages.FindAll(x => x.PosterStatus == false);
+
+            _context.HouseImages.RemoveRange(removedFiles);
+
+            foreach (var item in removedFiles)
+            {
+                FileManager.Delete(_env.WebRootPath, "uploads/houses", item.Name);
+            }
+
+            if (house.ImageFiles != null)
+            {
+                foreach (var imgFile in house.ImageFiles)
+                {
+                    HouseImage houseImage = new HouseImage
+                    {
+                        Name = FileManager.Save(imgFile, _env.WebRootPath, "uploads/houses")
+                    };
+
+                existhouse.HouseImages.Add(houseImage);
+                }
+            }
+
+            existhouse.Name = house.Name;
+            existhouse.ManagerId = house.ManagerId;
+            existhouse.CityId = house.CityId;
+            existhouse.CategoryId = house.CategoryId;
+            existhouse.IsNew = house.IsNew;
+            existhouse.IsSpecial = house.IsSpecial;
+            existhouse.Description = house.Description;
+            existhouse.RoomCount = house.RoomCount;
+            existhouse.BathroomCount = house.BathroomCount;
+            existhouse.BedroomCount = house.BedroomCount;
+            existhouse.Area = house.Area;
+            existhouse.SalePrice = house.SalePrice;
+            existhouse.CostPrice = house.CostPrice;
+            existhouse.DiscountPercantage = house.DiscountPercantage;
+            existhouse.BuildYear = house.BuildYear;
+            existhouse.StockStatus = house.StockStatus;
+
+            _context.SaveChanges();
+
+
+            return RedirectToAction("index");
         }
         public IActionResult Delete(int id)
         {
-            return View();
+            var house=_context.Houses.Include(x=>x.HouseImages).FirstOrDefault(x=>x.Id==id);
+                
+            if (house == null)
+                RedirectToAction("error", "dashboard");
+
+            var poster = _context.HouseImages.FirstOrDefault(x => x.PosterStatus ==true);
+
+            FileManager.Delete(_env.WebRootPath, "uploads/houses", poster.Name);
+
+            var removedFiles = house.HouseImages.FindAll(x => x.PosterStatus == false);
+
+            _context.HouseImages.RemoveRange(removedFiles);
+
+
+            foreach (var imgFile in removedFiles)
+            {
+                FileManager.Delete(_env.WebRootPath, "uploads/houses", imgFile.Name);
+            }
+
+            _context.Houses.Remove(house);
+            _context.SaveChanges();
+
+            return RedirectToAction("index");
         }
 
 

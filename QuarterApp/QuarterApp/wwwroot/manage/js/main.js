@@ -26,7 +26,7 @@
                     else {
                         Swal.fire({
                             icon: 'error',
-                            title: 'Slider not found!',
+                            title: 'File not found!',
                             text: 'Something went wrong!',
                         })
                     }
