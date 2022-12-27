@@ -10,5 +10,8 @@ namespace QuarterApp.ViewModels
 		public List<House> Houses { get; set; }
 		public List<Amenity> Amenities { get; set; }
 		public List<OurService> Services { get; set; }
+		public List<AboutUs> AboutUs { get; set; }
+		public int TotalArea { get; set; }
+		public int TotalRoom { get; set; }
     }
 }

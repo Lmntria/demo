@@ -1,7 +1,7 @@
 ﻿@model HomeVM
 <!-- SLIDER AREA START (slider-3) -->
 <div class="ltn__slider-area ltn__slider-3  section-bg-1">
-    <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1">
+    <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1 ">
         <!-- ltn__slide-item -->
         @foreach (var slider in Model.Sliders)
         {
@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                                 <div class="slide-item-img @(slider.Order%2==1?"":"slide-img-left")">
-                                    <img src="~/assets/img/slider/@slider.Image" alt="#">
+                                    <img src="~/uploads/sliders/@slider.Image" alt="#">
                                 </div>
                             </div>
                         </div>
@@ -95,62 +95,54 @@
 <div class="ltn__about-us-area pt-120 pb-90 ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 align-self-center">
-                <div class="about-us-img-wrap about-img-left">
-                    <img src="~/assets/img/others/7.png" alt="About Us Image">
-                    <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
+            @foreach (var item in Model.AboutUs)
+            {
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-img-wrap about-img-left">
+                        <img src="~/assets/img/others/@item.ImageBig" alt="About Us Image">
+                        <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
 
-                        <div class="ltn__video-img ltn__animation-pulse1">
-                            <img src="~/assets/img/others/8.png" alt="video popup bg image">
-                            <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
-                                <i class="fa fa-play"></i>
-                            </a>
+                            <div class="ltn__video-img ltn__animation-pulse1">
+                                <img src="~/assets/img/others/@item.VideoBg" alt="video popup bg image">
+                                <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <div class="about-us-info-wrap">
-                    <div class="section-title-area ltn__section-title-2--- mb-20">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
-                        <h1 class="section-title">
-                            The Leading Real Estate
-                            Rental Marketplace<span>.</span>
-                        </h1>
-                        <p>
-                            Over 39,000 people work for us in more than 70 countries all over the
-                            This breadth of global coverage, combined with specialist services
-                        </p>
-                    </div>
-                    <ul class="ltn__list-item-half clearfix">
-                        <li>
-                            <i class="flaticon-home-2"></i>
-                            Smart Home Design
-                        </li>
-                        <li>
-                            <i class="flaticon-mountain"></i>
-                            Beautiful Scene Around
-                        </li>
-                        <li>
-                            <i class="flaticon-heart"></i>
-                            Exceptional Lifestyle
-                        </li>
-                        <li>
-                            <i class="flaticon-secure"></i>
-                            Complete 24/7 Security
-                        </li>
-                    </ul>
-                    <div class="ltn__callout bg-overlay-theme-05  mt-30">
-                        <p>
-                            "Enimad minim veniam quis nostrud exercitation <br>
-                            llamco laboris. Lorem ipsum dolor sit amet"
-                        </p>
-                    </div>
-                    <div class="btn-wrapper animated">
-                        <a href="service.html" class="theme-btn-1 btn btn-effect-1">OUR SERVICES</a>
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-info-wrap">
+                        <div class="section-title-area ltn__section-title-2--- mb-20">
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
+                            <h1 class="section-title">
+                                @item.Header<span>.</span>
+                            </h1>
+                            <p>
+                                @item.Desc
+                            </p>
+                        </div>
+                        <ul class="ltn__list-item-half clearfix">
+                            @foreach (var amenity in Model.Amenities.Take(4))
+                            {
+                                <li>
+                                    @Html.Raw(@amenity.Icon)
+                                    @amenity.Name
+                                </li>
+                            }
+                        </ul>
+                        <div class="ltn__callout bg-overlay-theme-05  mt-30">
+                            <p>
+                                @item.Quate1<br>
+                                @item.Quate2
+                            </p>
+                        </div>
+                        <div class="btn-wrapper animated">
+                            <a href="@item.ButtonUrl" class="theme-btn-1 btn btn-effect-1">@item.ButtonText</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         </div>
     </div>
 </div>
@@ -164,7 +156,7 @@
                     <div class="counter-icon">
                         <i class="flaticon-select"></i>
                     </div>
-                    <h1><span class="counter">560</span><span class="counterUp-icon">+</span> </h1>
+                    <h1><span class="counter">@Model.TotalArea </span><span class="counterUp-icon">+</span> </h1>
                     <h6>Total Area Sq</h6>
                 </div>
             </div>
@@ -191,7 +183,7 @@
                     <div class="counter-icon">
                         <i class="flaticon-armchair"></i>
                     </div>
-                    <h1><span class="counter">340</span><span class="counterUp-icon">+</span> </h1>
+                    <h1><span class="counter">@Model.TotalRoom</span><span class="counterUp-icon">+</span> </h1>
                     <h6>Apartio Rooms</h6>
                 </div>
             </div>
@@ -203,64 +195,60 @@
 <div class="ltn__about-us-area pt-120 pb-90 ">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 align-self-center">
-                <div class="about-us-info-wrap">
-                    <div class="section-title-area ltn__section-title-2--- mb-30">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
-                        <h1 class="section-title">Today Sells Properties</h1>
-                        <p>
-                            Houzez allow you to design unlimited panels and real estate custom
-                            forms to capture leads and keep record of all information
-                        </p>
+            @foreach (var house in Model.Houses.Where(x => x.ParkingCount > 0).Take(1))
+            {
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-info-wrap">
+                        <div class="section-title-area ltn__section-title-2--- mb-30">
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
+                            <h1 class="section-title">Today Sells Properties</h1>
+                            <p>
+                                Houzez allow you to design unlimited panels and real estate custom
+                                forms to capture leads and keep record of all information
+                            </p>
+                        </div>
+                        <ul class="ltn__list-item-1 ltn__list-item-1-before clearfix">
+                            <li> Live Music Cocerts at Luviana</li>
+                            <li>Our SecretIsland Boat Tour is Just for You</li>
+                            <li>Live Music Cocerts at Luviana</li>
+                            <li>Live Music Cocerts at Luviana</li>
+                        </ul>
+                        <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
+                            <li>
+                                <span>@house.BedroomCount <i class="flaticon-bed"></i></span>
+                                Bedrooms
+                            </li>
+                            <li>
+                                <span>@house.BathroomCount <i class="flaticon-clean"></i></span>
+                                Bathrooms
+                            </li>
+                            <li>
+                                <span>@house.ParkingCount <i class="flaticon-car"></i></span>
+                                Car parking
+                            </li>
+                            <li>
+                                <span>@house.Area.ToString("0.##") <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
+                                square Ft
+                            </li>
+                        </ul>
+                        <ul class="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
+                            @foreach (var item in house.HouseImages.Where(x => x.PosterStatus == false))
+                            {
+                                <li>
+                                    <a href="img/img-slide/11.jpg" data-rel="lightcase:myCollection">
+                                        <img src="~/uploads/houses/@item.Name" alt="Image">
+                                    </a>
+                                </li>
+                            }
+                        </ul>
                     </div>
-                    <ul class="ltn__list-item-1 ltn__list-item-1-before clearfix">
-                        <li> Live Music Cocerts at Luviana</li>
-                        <li>Our SecretIsland Boat Tour is Just for You</li>
-                        <li>Live Music Cocerts at Luviana</li>
-                        <li>Live Music Cocerts at Luviana</li>
-                    </ul>
-                    <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
-                        <li>
-                            <span>3 <i class="flaticon-bed"></i></span>
-                            Bedrooms
-                        </li>
-                        <li>
-                            <span>2 <i class="flaticon-clean"></i></span>
-                            Bathrooms
-                        </li>
-                        <li>
-                            <span>2 <i class="flaticon-car"></i></span>
-                            Car parking
-                        </li>
-                        <li>
-                            <span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                            square Ft
-                        </li>
-                    </ul>
-                    <ul class="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
-                        <li>
-                            <a href="img/img-slide/11.jpg" data-rel="lightcase:myCollection">
-                                <img src="~/assets/img/img-slide/11.jpg" alt="Image">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="img/img-slide/12.jpg" data-rel="lightcase:myCollection">
-                                <img src="~/assets/img/img-slide/12.jpg" alt="Image">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="img/img-slide/13.jpg" data-rel="lightcase:myCollection">
-                                <img src="~/assets/img/img-slide/13.jpg" alt="Image">
-                            </a>
-                        </li>
-                    </ul>
                 </div>
-            </div>
-            <div class="col-lg-6 align-self-center">
-                <div class="about-us-img-wrap about-img-right">
-                    <img src="~/assets/img/others/9.png" alt="About Us Image">
+                <div class="col-lg-6 align-self-center">
+                    <div class="about-us-img-wrap about-img-right">
+                        <img width="100%" src="~/uploads/houses/@(house.HouseImages.FirstOrDefault(x=>x.PosterStatus==true).Name)" alt="About Us Image">
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     </div>
 </div>
@@ -315,7 +303,7 @@
                 <div class="col-lg-12">
                     <div class="ltn__product-item ltn__product-item-4 text-center---">
                         <div class="product-img">
-                            <a href="product-details.html"><img src="~/assets/img/product-3/1.jpg" alt="#"></a>
+                            <a href="product-details.html"><img width="100%" src="~/uploads/houses/@(house.HouseImages.FirstOrDefault(x=>x.PosterStatus==true).Name)" alt="#"></a>
                             <div class="product-badge">
                                 <ul>
                                     <li class="sale-badge bg-green @(house.DiscountPercantage>0?"":"d-none")">On Sale</li>
@@ -332,7 +320,7 @@
                                 <div class="product-img-gallery">
                                     <ul>
                                         <li>
-                                            <a href="product-details.html"><i class="fas fa-camera"></i>@house.HouseImages.Where(x=>x.HouseId==house.id).Count()</a>
+                                            <a href="product-details.html"><i class="fas fa-camera"></i>@house.HouseImages.Where(x=>x.PosterStatus==false).Count()</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -358,7 +346,7 @@
                                     Bathrooms
                                 </li>
                                 <li>
-                                    <span>@house.Area <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
+                                    <span>@house.Area.ToString("0.##") <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
                                     square Ft
                                 </li>
                             </ul>
@@ -518,7 +506,7 @@
             </div>
         </div>
         <div class="row ltn__category-slider-active--- slick-arrow-1 justify-content-center">
-            @foreach (var amenity in Model.Amenities)
+            @foreach (var amenity in Model.Amenities.Take(8))
             {
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 text-center">
@@ -687,7 +675,7 @@
 </div>
 <!-- BRAND LOGO AREA END -->
 <!-- BLOG AREA START (blog-3) -->
-<div class="ltn__blog-area pt-115--- pb-70">
+@*<div class="ltn__blog-area pt-115--- pb-70">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -733,5 +721,5 @@
             }
         </div>
     </div>
-</div>
+</div>*@
 <!-- BLOG AREA END -->

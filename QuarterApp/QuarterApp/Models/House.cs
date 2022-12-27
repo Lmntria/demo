@@ -15,6 +15,7 @@ namespace QuarterApp.Models
         public string Name { get; set; }
         [MaxLength(400)]
         public string Description { get; set; }
+        public int? ParkingCount { get; set; }
         public int RoomCount { get; set; }
         public int BathroomCount { get; set; }
         public int BedroomCount { get; set; }

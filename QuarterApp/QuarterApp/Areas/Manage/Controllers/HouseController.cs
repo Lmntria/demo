@@ -213,6 +213,7 @@ namespace QuarterApp.Areas.Manage.Controllers
             existhouse.DiscountPercantage = house.DiscountPercantage;
             existhouse.BuildYear = house.BuildYear;
             existhouse.StockStatus = house.StockStatus;
+            existhouse.ParkingCount = house.ParkingCount;
 
             _context.SaveChanges();
 
