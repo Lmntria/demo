@@ -10022,11 +10022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
+      "projectUniqueName": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
       "projectName": "QuarterApp",
-      "projectPath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
+      "projectPath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
       "packagesPath": "C:\\Users\\seymu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\obj\\",
+      "outputPath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\seymu\\AppData\\Roaming\\NuGet\\NuGet.Config",

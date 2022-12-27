@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uwiDx5k5Iowl5+ZJy2OurnQZr6Q97CChAW19VKhbL/HyvduO9QpEEeZuIB+OtH4sj5jPIKJWTDqK7EeNeBf4eg==",
+  "dgSpecHash": "l9DIc1S6hyboFnWEyydcxOzb+JbzPAAo5LHCI0dcYMDL+gwsn9t15sn5eRIoo2UUAAGm1hyR9u38OMAM64ydqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
+  "projectFilePath": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\QuarterApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\seymu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\seymu\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
