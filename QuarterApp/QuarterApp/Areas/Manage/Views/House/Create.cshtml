@@ -41,6 +41,12 @@
                                 <span class="text-danger" asp-validation-for="ManagerId"></span>
                             </div>
                             <div class="form-group">
+                                <label asp-for="AmenityIds">Amenities</label>
+                                <select asp-for="AmenityIds" class="form-control" asp-items="@(new SelectList(ViewBag.Amenities,nameof(Amenity.Id),nameof(Amenity.Name)))">
+                                </select>
+                                <span class="text-danger" asp-validation-for="AmenityIds"></span>
+                            </div>
+                            <div class="form-group">
                                 <label asp-for="Description">Description</label>
                                 <textarea asp-for="Description" class="form-control"></textarea>
                                 <span class="text-danger" asp-validation-for="Description"></span>

@@ -61,6 +61,32 @@ namespace QuarterApp.Areas.Manage.Controllers
                 return View();
             }
 
+            house.HouseAmenities = new List<HouseAmenity>();
+
+            foreach (var amenityId in house.AmenityIds)
+            {
+                if (!_context.Amenities.Any(x => x.Id == amenityId))
+                {
+                    ViewBag.City = _context.Cities.ToList();
+                    ViewBag.Category = _context.Categories.ToList();
+                    ViewBag.Manager = _context.SaleManagers.ToList();
+                    ViewBag.Amenities = _context.Amenities.ToList();
+
+                    ModelState.AddModelError("AmenityIds", "Amenity does not exists.");
+                    return View();
+                }
+
+                HouseAmenity houseAmenity = new HouseAmenity
+                {
+                    AmenityId = amenityId,
+                };
+
+                house.HouseAmenities.Add(houseAmenity);
+
+
+            }
+
+
             house.HouseImages = new List<HouseImage>();
 
             HouseImage poster = new HouseImage
@@ -98,6 +124,7 @@ namespace QuarterApp.Areas.Manage.Controllers
 
 
             var house = _context.Houses.Include(x=>x.HouseImages).FirstOrDefault(x => x.Id == id);
+            house.AmenityIds = _context.HouseAmenities.Select(x => x.AmenityId).ToList();
                 
             if (house == null)
                 return RedirectToAction("error", "dashboard");
@@ -136,11 +163,11 @@ namespace QuarterApp.Areas.Manage.Controllers
                 poster.Name = newimageName; 
             }
 
-            var removedFiles = existhouse.HouseImages.FindAll(x => x.PosterStatus == false);
+            var removedHouseImgs = existhouse.HouseImages.FindAll(x => x.PosterStatus == false);
 
-            _context.HouseImages.RemoveRange(removedFiles);
+            _context.HouseImages.RemoveRange(removedHouseImgs);
 
-            foreach (var item in removedFiles)
+            foreach (var item in removedHouseImgs)
             {
                 FileManager.Delete(_env.WebRootPath, "uploads/houses", item.Name);
             }
@@ -156,6 +183,18 @@ namespace QuarterApp.Areas.Manage.Controllers
 
                 existhouse.HouseImages.Add(houseImage);
                 }
+            }
+
+
+            foreach (var amenityId in house.AmenityIds)
+            {
+                HouseAmenity houseAmenity = new HouseAmenity
+                {
+                    AmenityId = amenityId,
+                    HouseId=house.Id
+                };
+                existhouse.HouseAmenities.Add(houseAmenity);
+
             }
 
             existhouse.Name = house.Name;
@@ -195,34 +234,18 @@ namespace QuarterApp.Areas.Manage.Controllers
 
             _context.HouseImages.RemoveRange(removedFiles);
 
-
             foreach (var imgFile in removedFiles)
             {
                 FileManager.Delete(_env.WebRootPath, "uploads/houses", imgFile.Name);
             }
+
+
 
             _context.Houses.Remove(house);
             _context.SaveChanges();
 
             return RedirectToAction("index");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void _checkImageFiles(IFormFile poster,List<IFormFile> images)
         {

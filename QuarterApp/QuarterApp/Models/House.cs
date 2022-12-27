@@ -49,5 +49,7 @@ namespace QuarterApp.Models
         public List<IFormFile>? ImageFiles { get; set; }
 
         public List<HouseAmenity>? HouseAmenities { get; set; }
+        [NotMapped]
+        public List<int>? AmenityIds { get; set; } = new List<int>();
     }
 }
