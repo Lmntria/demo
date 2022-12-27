@@ -1,4 +1,10 @@
-﻿<!doctype html>
+﻿@using QuarterApp.Services
+@inject LayoutService layoutService
+@{
+    Dictionary<string, string> settings = layoutService.GetSettings();
+}
+
+<!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
@@ -38,8 +44,8 @@
                         <div class="col-md-7">
                             <div class="ltn__top-bar-menu">
                                 <ul>
-                                    <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i> info@webmail.com</a></li>
-                                    <li><a href="locations.html"><i class="icon-placeholder"></i> 15/A, Nest Tower, NYC</a></li>
+                                    <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i class="icon-mail"></i>@settings["infoEmail"]</a></li>
+                                    <li><a href="locations.html"><i class="icon-placeholder"></i> @settings["TopAddress"]</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -562,7 +568,7 @@
                                             <i class="icon-placeholder"></i>
                                         </div>
                                         <div class="footer-address-info">
-                                            <p>Brooklyn, New York, United States</p>
+                                            <p>@settings["BottomAddress"]</p>
                                         </div>
                                     </li>
                                     <li>
@@ -570,7 +576,7 @@
                                             <i class="icon-call"></i>
                                         </div>
                                         <div class="footer-address-info">
-                                            <p><a href="tel:+0123-456789">+0123-456789</a></p>
+                                            <p><a href="tel:+0123-456789">@settings["ContactNumber"]</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -578,7 +584,7 @@
                                             <i class="icon-mail"></i>
                                         </div>
                                         <div class="footer-address-info">
-                                            <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                                <p><a href="mailto:example@example.com">@settings["BottomMail"]</a></p>
                                         </div>
                                     </li>
                                 </ul>

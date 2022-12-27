@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using QuarterApp.DAL;
+using QuarterApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddDbContext<QuarterDbContext>(opt =>
 });
 
 var app = builder.Build();
+builder.Services.AddScoped<LayoutService>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
