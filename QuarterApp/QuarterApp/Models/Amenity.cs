@@ -8,7 +8,7 @@ namespace QuarterApp.Models
         [MaxLength(30)]
         public string Name { get; set; }
         [MaxLength(80)]
-        public string Icon { get; set; }
+        public string? Icon { get; set; }
 
         public List<HouseAmenity>? HouseAmenities { get; set; }
     }

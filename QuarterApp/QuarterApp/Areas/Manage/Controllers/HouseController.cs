@@ -185,13 +185,24 @@ namespace QuarterApp.Areas.Manage.Controllers
                 }
             }
 
+            existhouse.HouseAmenities.RemoveAll(x => !house.AmenityIds.Contains(x.AmenityId));
 
-            foreach (var amenityId in house.AmenityIds)
+            foreach (var amenityId in house.AmenityIds.Where(x=>!existhouse.HouseAmenities.Any(bt=>bt.AmenityId==x)))
             {
+                if (!_context.Amenities.Any(x => x.Id == amenityId))
+                {
+                    ViewBag.City = _context.Cities.ToList();
+                    ViewBag.Category = _context.Categories.ToList();
+                    ViewBag.Manager = _context.SaleManagers.ToList();
+                    ViewBag.Amenities = _context.Amenities.ToList();
+
+                    house.AmenityIds = existhouse.HouseAmenities.Select(x => x.AmenityId).ToList();
+                    ModelState.AddModelError("AmenityIds", "Amenity not found");
+                    return View(existhouse);
+                }
                 HouseAmenity houseAmenity = new HouseAmenity
                 {
                     AmenityId = amenityId,
-                    HouseId=house.Id
                 };
                 existhouse.HouseAmenities.Add(houseAmenity);
 
