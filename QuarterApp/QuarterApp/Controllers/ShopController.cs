@@ -15,8 +15,11 @@ namespace QuarterApp.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(List<int>? cityId=null,List<int>? categoryId=null)
         {
+            ViewBag.SelectedCityIds = cityId;
+            ViewBag.SelectedCategoryIds = categoryId;
+
             var house = _context.Houses
             .Include(x => x.City)
             .Include(x => x.HouseImages)
@@ -25,7 +28,10 @@ namespace QuarterApp.Controllers
 
             ShopVm shopVm = new ShopVm
             {
-                Houses = house
+                Houses = house,
+                Cities = _context.Cities.Include(x => x.Houses).ToList(),
+                Categories = _context.Categories.Include(x => x.Houses).ToList(),
+                Amenities = _context.Amenities.Include(x => x.HouseAmenities).ThenInclude(x => x.House).ToList(),
             };
 
             return View(shopVm);
