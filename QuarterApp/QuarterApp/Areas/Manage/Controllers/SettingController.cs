@@ -40,34 +40,49 @@ namespace QuarterApp.Areas.Manage.Controllers
 
             return RedirectToAction("Index");   
         }
-        //public IActionResult Edit(int id)
-        //{
-        //    var setting = _context.Settings.FirstOrDefault(x => x.Id == id);
-        //    if (setting == null)
-        //        return RedirectToAction("error", "dashboard");
+        public IActionResult Edit(string key)
+        {
+            var setting = _context.Settings.FirstOrDefault(x => x.Key == key);
 
-        //    return View(setting);
-        //}
-        //[HttpPost]
-        //public IActionResult Edit(Setting setting)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return View();
-        //    if (_context.Settings.Any(x => x.Key == setting.Key && x.Value == setting.Value))
-        //    {
-        //        ModelState.AddModelError("Value", "This Value is already taken");
-        //        return View();
-        //    }
+            if (setting == null)
+                return RedirectToAction("error", "dashboard");
 
-        //    var editedSetting = _context.Settings.FirstOrDefault(x => x.Key == setting.Key);
+            return View(setting);
+        }
+        [HttpPost]
+        public IActionResult Edit(Setting setting)
+        {
+            if (!ModelState.IsValid)
+                return View();
+            if (_context.Settings.Any(x => x.Key == setting.Key && x.Value == setting.Value))
+            {
+                ModelState.AddModelError("Value", "This Value is already taken");
+                return View();
+            }
 
-        //    if (editedSetting == null)
-        //        return RedirectToAction("error", "dashboard");
+            var editedSetting = _context.Settings.FirstOrDefault(x => x.Key == setting.Key);
 
-        //    editedSetting.Value = setting.Value;
-        //    _context.SaveChanges();
+            if (editedSetting == null)
+                return RedirectToAction("error", "dashboard");
 
-        //    return RedirectToAction("Index");
-        //}
+            editedSetting.Value = setting.Value;
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(string key)
+        {
+            var setting = _context.Settings.FirstOrDefault(x => x.Key == key);
+
+            if (setting == null)
+                return RedirectToAction("error", "dashboard");
+
+
+            _context.Settings.Remove(setting);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

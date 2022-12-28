@@ -11,8 +11,8 @@ builder.Services.AddDbContext<QuarterDbContext>(opt =>
 	opt.UseSqlServer(@"Server=DESKTOP-CGIBQ3V\SQLEXPRESS01;Database=QuarterAppDb;Trusted_Connection=TRUE");
 });
 
-var app = builder.Build();
 builder.Services.AddScoped<LayoutService>();
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

@@ -5,12 +5,10 @@ namespace QuarterApp.Services
     public class LayoutService
     {
         private readonly QuarterDbContext _context;
-        private readonly IHttpContextAccessor _httpAccessor;
 
-        public LayoutService(QuarterDbContext context,IHttpContextAccessor httpAccessor)
+        public LayoutService(QuarterDbContext context)
         {
             _context= context;
-            _httpAccessor= httpAccessor;
         }
 
         public Dictionary<string, string> GetSettings() 
