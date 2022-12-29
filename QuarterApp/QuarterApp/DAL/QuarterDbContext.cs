@@ -1,9 +1,10 @@
 ﻿using QuarterApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace QuarterApp.DAL
 {
-	public class QuarterDbContext:DbContext
+	public class QuarterDbContext:IdentityDbContext
 	{
 		public QuarterDbContext(DbContextOptions<QuarterDbContext> opt):base(opt)
 		{
@@ -21,5 +22,6 @@ namespace QuarterApp.DAL
 		public DbSet<HouseAmenity> HouseAmenities { get;set; }
 		public DbSet<OurService> OurServices { get; set; }
 		public DbSet<AboutUs> AboutUs { get; set; }
+		public DbSet<AppUser> AppUsers { get; set; }
 	}
 }

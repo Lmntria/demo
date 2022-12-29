@@ -268,3 +268,8 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\QuarterApp.pdb
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\QuarterApp.genruntimeconfig.cache
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\ref\QuarterApp.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
