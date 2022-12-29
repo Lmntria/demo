@@ -22,6 +22,8 @@ namespace QuarterApp.Controllers
 			var bathrooms = _context.Houses.Sum(x => x.BathroomCount);
             var rooms = _context.Houses.Sum(x => x.RoomCount);
 
+			ViewBag.Cities = _context.Cities.ToList();
+			ViewBag.Categories = _context.Categories.ToList();
 
             HomeVM homeVM = new HomeVM
 			{

@@ -16,12 +16,13 @@ namespace QuarterApp.Controllers
             _context = context;
         }
 
-        public IActionResult Index(List<int>? cityIds=null,List<int>? categoryIds=null,List<int> salemanagerIds=null,List<int> amenityIds=null,decimal? minPrice=null,decimal? maxPrice=null)
+        public IActionResult Index(List<int>? cityIds=null,List<int>? categoryIds=null,List<int> salemanagerIds=null,List<int> amenityIds=null,decimal? minPrice=null,decimal? maxPrice=null,string? searchText=null)
         {
             ViewBag.SelectedCityIds = cityIds;
             ViewBag.SelectedCategoryIds = categoryIds;
             ViewBag.SelectedManagerIds= salemanagerIds;
             ViewBag.SelectedAmenityIds = amenityIds;
+            ViewBag.SearchedText = searchText;
 
 
             var house = _context.Houses
@@ -49,6 +50,11 @@ namespace QuarterApp.Controllers
             if(minPrice!=null && maxPrice != null)
             {
                 house = house.Where(x => x.SalePrice >= minPrice && x.SalePrice <= maxPrice);
+            }
+            if (searchText != null)
+            {
+                string loweredSearch = searchText.Trim().ToLower();
+                house = house.Where(x => x.Name.ToLower().Contains(loweredSearch));
             }
 
 
