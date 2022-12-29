@@ -26,7 +26,7 @@ namespace QuarterApp.Models
         public byte Order { get; set; }
         [NotMapped]
         [MaxFileSize(3)]
-        //[AllowedFileType("image/png", "image/jpeg", "image/jpg")]
+        [AllowedFileType("image/png", "image/jpeg", "image/jpg")]
         public IFormFile? ImageFile { get; set; }
     }
 }

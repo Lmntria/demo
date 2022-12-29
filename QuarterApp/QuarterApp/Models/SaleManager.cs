@@ -15,7 +15,7 @@ namespace QuarterApp.Models
         public string? Image { get; set; }
         [NotMapped]
         [MaxFileSize(3)]
-        //[AllowedFileType("image/jpeg","image/png")]
+        [AllowedFileType("image/jpeg", "image/png")]
         public IFormFile? ImageFile { get; set; }
 
         public List<House>? Houses { get; set; }

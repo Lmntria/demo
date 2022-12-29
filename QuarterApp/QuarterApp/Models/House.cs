@@ -44,9 +44,12 @@ namespace QuarterApp.Models
 
         [NotMapped]
         [MaxFileSize(3)]
+        [AllowedFileType("image/png", "image/jpeg", "image/jpg")]
         public IFormFile? PosterImage { get; set; }
         [NotMapped]
         [MaxFileSize(3)]
+        [AllowedFileType("image/png", "image/jpeg", "image/jpg")]
+
         public List<IFormFile>? ImageFiles { get; set; }
 
         public List<HouseAmenity>? HouseAmenities { get; set; }
