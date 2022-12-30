@@ -16,7 +16,7 @@ namespace QuarterApp.Controllers
 			_context=context;
 		}
 
-		public IActionResult Index()
+		public IActionResult Index(string redirectUrl)
 		{
 			var bedrooms = _context.Houses.Sum(x => x.BedroomCount);
 			var bathrooms = _context.Houses.Sum(x => x.BathroomCount);
@@ -40,6 +40,12 @@ namespace QuarterApp.Controllers
 				TotalRoom=bedrooms+bathrooms+rooms,
 				AboutUs=_context.AboutUs.Take(1).ToList(),
 			};
+
+			if (redirectUrl != null)
+				return Redirect(redirectUrl);
+
+
+
 			return View(homeVM);
 		}
 

@@ -1,7 +1,13 @@
 ﻿@using QuarterApp.Services
 @inject LayoutService layoutService
+@inject UserManager<AppUser> _manager
 @{
     Dictionary<string, string> settings = layoutService.GetSettings();
+    AppUser user=null;
+    if(User.Identity.IsAuthenticated && User.IsInRole("Member"))
+    {
+        user = _manager.FindByNameAsync(User.Identity.Name).Result;
+    }
 }
 
 <!doctype html>
@@ -123,7 +129,7 @@
                                     <div class="ltn__main-menu">
                                         <ul>
                                             <li class="menu-icon">
-                                                <a href="#">Home</a>
+                                                <a asp-action="index" asp-controller="home">Home</a>
                                                 <ul class="sub-menu menu-pages-img-show">
                                                     <li>
                                                         <a href="index.html">Home Style 01</a>
@@ -285,17 +291,32 @@
                             </div>
                             <!-- user-menu -->
                             <div class="ltn__drop-menu user-menu">
-                                <ul>
+                                @if (User.Identity.IsAuthenticated && User.IsInRole("Member"))
+                                {
+                                    <ul>
                                     <li>
                                         <a asp-action="profile" asp-controller="account"><i class="icon-user"></i></a>
                                         <ul>
-                                            <li><a asp-action="login" asp-controller="account">Sign in</a></li>
-                                            <li><a asp-action="register" asp-controller="account">Register</a></li>
+                                            <li><a asp-action="profile" asp-controller="account">@user.Fullname</a></li>
                                             <li><a asp-action="profile" asp-controller="account">My Account</a></li>
                                             <li><a asp-action="wishlist" asp-controller="account">Wishlist</a></li>
+                                            <li><a asp-action="logout" asp-controller="account" class="text-danger">Log out</a></li>
+                                        </ul>
+                                    </li>
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <ul>
+                                    <li>
+                                            <a asp-action="login" asp-controller="account"><i class="icon-user"></i></a>
+                                        <ul>
+                                            <li><a asp-action="login" asp-controller="account">Sign in</a></li>
+                                            <li><a asp-action="register" asp-controller="account">Register</a></li>
                                         </ul>
                                     </li>
                                 </ul>
+                                }
                             </div>
                             <!-- mini-cart -->
                             <div class="mini-cart-icon">

@@ -1,10 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuarterApp.DAL;
 using QuarterApp.Models;
+using System.Data;
 
 namespace QuarterApp.Areas.Manage.Controllers
 {
     [Area("Manage")]
+    [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+
     public class CategoryController : Controller
     {
         private readonly QuarterDbContext _context;

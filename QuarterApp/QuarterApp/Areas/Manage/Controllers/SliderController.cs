@@ -2,10 +2,14 @@
 using QuarterApp.DAL;
 using QuarterApp.Helpers;
 using QuarterApp.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace QuarterApp.Areas.Manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+
     public class SliderController : Controller
     {
         private readonly QuarterDbContext _context;

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using QuarterApp.DAL;
 using QuarterApp.Helpers;
 using QuarterApp.Models;
@@ -6,6 +7,8 @@ using QuarterApp.Models;
 namespace QuarterApp.Areas.Manage.Controllers
 {
     [Area("manage")]
+    [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+
     public class OurServiceController : Controller
     {
         private readonly QuarterDbContext _context;

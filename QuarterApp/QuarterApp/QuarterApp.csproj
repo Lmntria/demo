@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="wwwroot\uploads\users\**" />
-    <Content Remove="wwwroot\uploads\users\**" />
-    <EmbeddedResource Remove="wwwroot\uploads\users\**" />
-    <None Remove="wwwroot\uploads\users\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
@@ -25,6 +18,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\uploads\houses\" />
+    <Folder Include="wwwroot\uploads\users\" />
     <Folder Include="wwwroot\uploads\ourServices\" />
   </ItemGroup>
 

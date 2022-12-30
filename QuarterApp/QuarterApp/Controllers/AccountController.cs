@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using QuarterApp.DAL;
 using QuarterApp.Models;
 using QuarterApp.ViewModels;
+using System.Data;
 using System.Runtime.Intrinsics.Arm;
 
 namespace QuarterApp.Controllers
@@ -116,6 +118,7 @@ namespace QuarterApp.Controllers
 
             return RedirectToAction("login");
         }
+        [Authorize(Roles = "Member")]
         public IActionResult Profile()
         {
             return View();
