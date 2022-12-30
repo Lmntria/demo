@@ -287,12 +287,12 @@
                             <div class="ltn__drop-menu user-menu">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="icon-user"></i></a>
+                                        <a asp-action="profile" asp-controller="account"><i class="icon-user"></i></a>
                                         <ul>
-                                            <li><a href="login.html">Sign in</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                            <li><a href="account.html">My Account</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                            <li><a asp-action="login" asp-controller="account">Sign in</a></li>
+                                            <li><a asp-action="register" asp-controller="account">Register</a></li>
+                                            <li><a asp-action="profile" asp-controller="account">My Account</a></li>
+                                            <li><a asp-action="wishlist" asp-controller="account">Wishlist</a></li>
                                         </ul>
                                     </li>
                                 </ul>

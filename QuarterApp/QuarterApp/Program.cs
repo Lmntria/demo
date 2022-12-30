@@ -16,6 +16,7 @@ builder.Services.AddDbContext<QuarterDbContext>(opt =>
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
 	opt.Password.RequireDigit= true;
+	opt.Password.RequireNonAlphanumeric = false;
 }).AddDefaultTokenProviders().AddEntityFrameworkStores<QuarterDbContext>();
 
 builder.Services.AddScoped<LayoutService>();
