@@ -7,10 +7,10 @@ namespace QuarterApp.Models
     public class AppUser:IdentityUser
     {
         public string Fullname { get; set; }
-        public string? Image { get; set; }
-        [NotMapped]
-        [MaxFileSize(3)]
-        [AllowedFileType("image/png", "image/jpeg", "image/jpg")]
-        public IFormFile? ProfileImg { get; set; }
+        //public string? Image { get; set; }
+        //[NotMapped]
+        //[MaxFileSize(3)]
+        //[AllowedFileType("image/png", "image/jpeg", "image/jpg")]
+        //public IFormFile? ProfileImg { get; set; }
     }
 }

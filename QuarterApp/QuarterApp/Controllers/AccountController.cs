@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Scripting;
 using QuarterApp.DAL;
 using QuarterApp.Models;
 using QuarterApp.ViewModels;
@@ -119,15 +120,65 @@ namespace QuarterApp.Controllers
             return RedirectToAction("login");
         }
         [Authorize(Roles = "Member")]
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
-            return View();
+            AppUser user = await _manager.FindByNameAsync(User.Identity.Name);
+
+
+            MemberUpdateVM memberUpdate = new MemberUpdateVM
+            {
+                Fullname = user.Fullname,
+                UserName = user.UserName,
+                Email = user.Email,
+            };
+
+
+            return View(memberUpdate);
         }
-        //[HttpPost]
-        //public IActionResult Profile()
-        //{
-        //    return View();
-        //}
+
+        [HttpPost]
+        [Authorize(Roles = "Member")]
+
+        public async Task<IActionResult> Profile(MemberUpdateVM memberUpdate)
+        {
+            AppUser user = await _manager.FindByNameAsync(User.Identity.Name);
+
+            if (user == null)
+                return RedirectToAction("login");
+
+            if(memberUpdate.CurrentPassword==null && !await _manager.CheckPasswordAsync(user,memberUpdate.CurrentPassword))
+                ModelState.AddModelError("CurrentPassword", "Password is incorrect");
+
+            if(memberUpdate.UserName.ToUpper()!=user.NormalizedUserName && _context.Users.Any(x=>x.NormalizedUserName==memberUpdate.UserName.ToUpper()))
+                ModelState.AddModelError("UserName", "Username has already taken");
+
+            if (memberUpdate.Email!=null && memberUpdate.Email.ToUpper() != user.NormalizedEmail && _context.Users.Any(x => x.NormalizedEmail == memberUpdate.Email.ToUpper()))
+                ModelState.AddModelError("Email", "Email has already taken");
+
+            if (memberUpdate.Password != null)
+            {
+                var result = await _manager.ChangePasswordAsync(user, memberUpdate.CurrentPassword, memberUpdate.Password);
+                if (!result.Succeeded)
+                {
+                    foreach (var err in result.Errors)
+                    {
+                        ModelState.AddModelError("", err.Description);
+                    }
+                    return View();
+                }
+            }
+            if(memberUpdate.Fullname!=null)
+                 user.Fullname = memberUpdate.Fullname;
+            if (memberUpdate.UserName != null)
+                user.UserName = memberUpdate.UserName;
+            if (memberUpdate.Email != null)
+                user.Email = memberUpdate.Email;
+            await _manager.UpdateAsync(user);
+            await _signInManager.SignInAsync(user, isPersistent: false);
+
+
+            return RedirectToAction("profile");
+        }
 
         public async Task<IActionResult> Logout()
         {
