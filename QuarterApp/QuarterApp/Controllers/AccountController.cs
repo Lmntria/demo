@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Scripting;
+using MimeKit.Text;
+using MimeKit;
 using QuarterApp.DAL;
 using QuarterApp.Models;
 using QuarterApp.ViewModels;
-using System.Data;
-using System.Runtime.Intrinsics.Arm;
+using MailKit.Security;
+using MailKit.Net.Smtp;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace QuarterApp.Controllers
 {
@@ -186,5 +188,80 @@ namespace QuarterApp.Controllers
             return RedirectToAction("index", "home");
         }
 
+
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordVM forgotPassword)
+        {
+            AppUser user=await _manager.FindByEmailAsync(forgotPassword.Email);
+
+            if (user == null)
+                return RedirectToAction("error", "home");
+
+            var token = await _manager.GeneratePasswordResetTokenAsync(user);
+
+            var url = Url.Action("VerifyPasswordReset", "account", new {email=user.Email,token=token},Request.Scheme);
+
+            var email = new MimeMessage();
+            email.From.Add(MailboxAddress.Parse("amy.jast30@ethereal.email"));
+            email.To.Add(MailboxAddress.Parse("amy.jast30@ethereal.email"));
+            email.Subject = "Test Email Subject";
+            email.Body = new TextPart(TextFormat.Html) { Text = $"<h1> Hello, {user.Fullname} Click <a href=\"{url}\">here</a> for reseting password</h1>" };
+
+            using var smtp = new SmtpClient();
+            smtp.Connect("smtp.ethereal.email", 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate("amy.jast30@ethereal.email", "pt3w5FY2gAaEC5JHK2");
+            smtp.Send(email);
+            smtp.Disconnect(true);
+
+
+            return View();
+        }
+
+        public async Task<IActionResult> VerifyPasswordReset(string token,string email)
+        {
+            AppUser user = await _manager.FindByEmailAsync(email);
+
+            if(user==null && !await _manager.VerifyUserTokenAsync(user, _manager.Options.Tokens.PasswordResetTokenProvider, "ResetPassword", token))
+                return RedirectToAction("error", "home");
+
+            TempData["Email"] = email;
+            TempData["Token"] = token;
+
+
+            return RedirectToAction("ResetPassword");
+        }
+        public IActionResult ResetPassword()
+        {
+            var email = TempData["Email"];
+            var token = TempData["Token"];
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(PasswordResetVm passwordReset)
+        {
+            AppUser user = await _manager.FindByEmailAsync(passwordReset.Email);
+
+            if(user==null)
+                return RedirectToAction("error", "home");
+
+
+            var result = await _manager.ResetPasswordAsync(user, passwordReset.Token, passwordReset.Password);
+
+            if (!result.Succeeded)
+            {
+                foreach (var err in result.Errors)
+                {
+                    ModelState.AddModelError("", err.Description);
+                }
+            }
+
+            return RedirectToAction("login");
+        }
     }
 }
