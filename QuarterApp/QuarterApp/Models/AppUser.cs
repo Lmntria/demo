@@ -12,5 +12,10 @@ namespace QuarterApp.Models
         //[MaxFileSize(3)]
         //[AllowedFileType("image/png", "image/jpeg", "image/jpg")]
         //public IFormFile? ProfileImg { get; set; }
+
+        //public string? RoleId { get; set; }
+
+        //public IdentityRole? Role { get; set; }
+
     }
 }

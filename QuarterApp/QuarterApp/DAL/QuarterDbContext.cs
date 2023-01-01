@@ -23,5 +23,6 @@ namespace QuarterApp.DAL
 		public DbSet<OurService> OurServices { get; set; }
 		public DbSet<AboutUs> AboutUs { get; set; }
 		public DbSet<AppUser> AppUsers { get; set; }
+		public DbSet<WishListItem> WishListItems { get; set; }
 	}
 }
