@@ -1261,6 +1261,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\contact.js"
     },
     {
+      "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
       "Id": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\js\\google-map.js",
       "PackagePath": "staticwebassets\\assets\\js\\google-map.js"
     },

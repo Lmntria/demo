@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YaaShrefDmwekc9CkD0y2yoe0oVLro4eRvBzOxo4MZ8=",
+  "Hash": "lJlt+H2PytljXOnOkndPpY0mS/sXF+5e+sm59bFVYB8=",
   "Source": "QuarterApp",
   "BasePath": "_content/QuarterApp",
   "Mode": "Default",
@@ -5387,6 +5387,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\contact.js"
+    },
+    {
+      "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\js\\custom.js",
+      "SourceId": "QuarterApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\",
+      "BasePath": "_content/QuarterApp",
+      "RelativePath": "assets/js/custom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\custom.js"
     },
     {
       "Identity": "C:\\Users\\seymu\\Desktop\\BackEnd_Project\\BackEnd_Project\\QuarterApp\\QuarterApp\\wwwroot\\assets\\js\\google-map.js",

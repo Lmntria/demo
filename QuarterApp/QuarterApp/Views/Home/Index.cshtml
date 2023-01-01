@@ -1,5 +1,4 @@
 ﻿@model HomeVM
-<!-- SLIDER AREA START (slider-3) -->
 <div class="ltn__slider-area ltn__slider-3  section-bg-1">
     <div class="ltn__slide-one-active slick-slide-arrow-1 slick-slide-dots-1 ">
         <!-- ltn__slide-item -->
@@ -365,7 +364,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+                                        <a asp-action="AddToWishList" asp-controller="house" asp-route-houseId="@house.Id" class="add-to-wishlist">
                                             <i class="flaticon-heart-1"></i>
                                         </a>
                                     </li>
@@ -502,7 +501,7 @@
             </div>
         </div>
         <div class="row ltn__category-slider-active--- slick-arrow-1 justify-content-center">
-            @foreach (var amenity in Model.Amenities.Where(x=>x.Icon!=null).Take(8))
+            @foreach (var amenity in Model.Amenities.Where(x => x.Icon != null).Take(8))
             {
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 text-center">
