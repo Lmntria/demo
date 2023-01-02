@@ -48,7 +48,7 @@
                                         <td class="cart-product-price">$@((item.House.SalePrice * (100 - item.House.DiscountPercantage) / 100).ToString("0.00"))</td>
                                         <td class="cart-product-stock">@(item.House.StockStatus == true ? "In Stock" : "Out of Stock")</td>
                                         <td class="cart-product-add-cart">
-                                            <a class="submit-button-1" href="#" title="Add to Cart">Purchase</a>
+                                            <a class="submit-button-1" asp-action="checkout" asp-controller="order" title="Add to Cart">Purchase</a>
                                         </td>
                                     </tr>
                                 }

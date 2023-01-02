@@ -106,7 +106,7 @@ namespace QuarterApp.Controllers
 
                 WishListCookieItemVM wishlistCookieItem = cookieItems.FirstOrDefault(x => x.HouseId == houseId);
 
-                if (cookieItems == null)
+                if (wishlistCookieItem == null)
                 {
                     wishlistCookieItem = new WishListCookieItemVM
                     {

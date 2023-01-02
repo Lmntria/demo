@@ -24,5 +24,7 @@ namespace QuarterApp.DAL
 		public DbSet<AboutUs> AboutUs { get; set; }
 		public DbSet<AppUser> AppUsers { get; set; }
 		public DbSet<WishListItem> WishListItems { get; set; }
-	}
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+    }
 }

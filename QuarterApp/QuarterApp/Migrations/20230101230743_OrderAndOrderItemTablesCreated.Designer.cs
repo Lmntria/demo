@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QuarterApp.DAL;
 
@@ -11,9 +12,10 @@ using QuarterApp.DAL;
 namespace QuarterApp.Migrations
 {
     [DbContext(typeof(QuarterDbContext))]
-    partial class QuarterDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230101230743_OrderAndOrderItemTablesCreated")]
+    partial class OrderAndOrderItemTablesCreated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -471,6 +473,7 @@ namespace QuarterApp.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<string>("Address2")
+                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
@@ -522,7 +525,7 @@ namespace QuarterApp.Migrations
                     b.Property<int>("Count")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("DiscountPercantage")
+                    b.Property<decimal>("DiscountPercent")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int?>("HouseId")

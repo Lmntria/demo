@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using QuarterApp.Attributes.ValidationAttributes;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace QuarterApp.Models
 {
     public class AppUser:IdentityUser
     {
+        [MaxLength(50)]
         public string Fullname { get; set; }
         //public string? Image { get; set; }
         //[NotMapped]
