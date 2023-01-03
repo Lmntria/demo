@@ -1,0 +1,18 @@
+﻿@model List<WishListItemVM>
+@foreach (var item in Model)
+{
+    <tr>
+        <td><a class="cart-product-remove delete-product" asp-action="DeleteProduct" asp-controller="house" asp-route-houseId="@item.House.Id">x</a></td>
+        <td class="cart-product-image">
+            <a href="product-details.html"><img src="~/uploads/houses/@(item.House.HouseImages.FirstOrDefault(x=>x.PosterStatus==true).Name)" alt="#"></a>
+        </td>
+        <td class="cart-product-info">
+            <h4><a href="product-details.html">@item.House.Name</a></h4>
+        </td>
+        <td class="cart-product-price">$@((item.House.SalePrice * (100 - item.House.DiscountPercantage) / 100).ToString("0.00"))</td>
+        <td class="cart-product-stock">@(item.House.StockStatus == true ? "In Stock" : "Out of Stock")</td>
+        <td class="cart-product-add-cart">
+            <a class="submit-button-1" asp-action="checkout" asp-controller="order">Purchase</a>
+        </td>
+    </tr>
+}

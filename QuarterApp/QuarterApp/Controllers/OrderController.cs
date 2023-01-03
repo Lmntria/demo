@@ -42,7 +42,7 @@ namespace QuarterApp.Controllers
             if (User.Identity.IsAuthenticated)
             {
                 string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                wishListItems=_context.WishListItems.Include(x=>x.House).Where(x=>x.AppUserId== userId).ToList();
+                wishListItems=_context.WishListItems.Include(x=>x.House).Where(x=>x.AppUserId== userId ).ToList();
                 order.AppUserId = userId;
                 _context.WishListItems.RemoveRange(wishListItems);
             }

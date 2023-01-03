@@ -7,8 +7,12 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\QuarterApp.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\QuarterApp.pdb
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Humanizer.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MailKit.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MessagePack.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Build.dll
@@ -37,6 +41,8 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
@@ -53,6 +59,7 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MimeKit.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\NuGet.Common.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\NuGet.Configuration.dll
@@ -63,6 +70,7 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\NuGet.ProjectModel.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\NuGet.Protocol.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\NuGet.Versioning.dll
+C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\System.Composition.Convention.dll
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\System.Composition.Hosting.dll
@@ -268,11 +276,3 @@ C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\QuarterApp.pdb
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\QuarterApp.genruntimeconfig.cache
 C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\obj\Debug\net6.0\ref\QuarterApp.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MailKit.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\MimeKit.dll
-C:\Users\seymu\Desktop\BackEnd_Project\BackEnd_Project\QuarterApp\QuarterApp\bin\Debug\net6.0\BouncyCastle.Crypto.dll

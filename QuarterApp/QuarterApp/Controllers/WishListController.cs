@@ -18,9 +18,18 @@ namespace QuarterApp.Controllers
             _context = context;
             _httpAccessor = httpAccessor;
         }
-        public IActionResult Index()
+        public IActionResult Index(WishListVM wishListVM)
         {
-            WishListVM wishList = new WishListVM();
+            WishListVM wishList = null;
+            if (wishListVM.WishListItems.Count>0)
+            {
+                 wishList = wishListVM;
+                return View(wishList);
+            }
+            else
+            {
+                 wishList = new WishListVM();
+            }
 
             if (_httpAccessor.HttpContext.User.Identity.IsAuthenticated && _httpAccessor.HttpContext.User.IsInRole("Member"))
             {

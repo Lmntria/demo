@@ -26,32 +26,8 @@
                 <div class="shoping-cart-inner">
                     <div class="shoping-cart-table table-responsive">
                         <table class="table">
-                            <!-- <thead>
-                                <th class="cart-product-remove">X</th>
-                                <th class="cart-product-image">Image</th>
-                                <th class="cart-product-info">Title</th>
-                                <th class="cart-product-price">Price</th>
-                                <th class="cart-product-quantity">Quantity</th>
-                                <th class="cart-product-subtotal">Subtotal</th>
-                            </thead> -->
                             <tbody>
-                                @foreach (var item in Model.WishListItems)
-                                {
-                                    <tr>
-                                        <td class="cart-product-remove">x</td>
-                                        <td class="cart-product-image">
-                                            <a href="product-details.html"><img src="~/uploads/houses/@(item.House.HouseImages.FirstOrDefault(x=>x.PosterStatus==true).Name)" alt="#"></a>
-                                        </td>
-                                        <td class="cart-product-info">
-                                            <h4><a href="product-details.html">@item.House.Name</a></h4>
-                                        </td>
-                                        <td class="cart-product-price">$@((item.House.SalePrice * (100 - item.House.DiscountPercantage) / 100).ToString("0.00"))</td>
-                                        <td class="cart-product-stock">@(item.House.StockStatus == true ? "In Stock" : "Out of Stock")</td>
-                                        <td class="cart-product-add-cart">
-                                            <a class="submit-button-1" asp-action="checkout" asp-controller="order" title="Add to Cart">Purchase</a>
-                                        </td>
-                                    </tr>
-                                }
+                                @await Html.PartialAsync("_WishListPartial",Model.WishListItems)
                             </tbody>
                         </table>
                     </div>

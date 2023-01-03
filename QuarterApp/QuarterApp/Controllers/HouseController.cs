@@ -134,8 +134,97 @@ namespace QuarterApp.Controllers
 
                 }
             }
-            return RedirectToAction("index", "home");
+            return RedirectToAction("index", "home", wishList);
 
+        }
+
+        public async Task<IActionResult> DeleteProduct(int houseId)
+        {
+            AppUser user = null;
+
+            if (User.Identity.IsAuthenticated)
+            {
+                user = await _manager.FindByNameAsync(User.Identity.Name);
+            }
+            WishListVM wishList = new WishListVM();
+
+
+            if (user != null)
+            {
+                WishListItem wishListItem = _context.WishListItems.FirstOrDefault(x => x.HouseId == houseId && x.AppUserId == user.Id);
+
+                if(wishListItem != null)
+                {
+                    _context.WishListItems.Remove(wishListItem);
+                }
+                else
+                {
+                    return RedirectToAction("error", "home");
+                }
+
+                _context.SaveChanges();
+
+
+                var model = _context.WishListItems.Include(x => x.House).ThenInclude(x => x.HouseImages).Where(x => x.AppUserId == user.Id).ToList();
+
+
+                foreach (var item in model)
+                {
+                    WishListItemVM itemVM = new WishListItemVM
+                    {
+                        House = item.House,
+                        Id = item.Id,
+                    };
+
+
+                    wishList.WishListItems.Add(itemVM);
+                }
+            }
+
+            else
+            {
+                var wishlistStr = HttpContext.Request.Cookies["wishList"];
+
+                List<WishListCookieItemVM> wishListCookieItems = null;
+
+                if(wishlistStr != null)
+                {
+                    wishListCookieItems=JsonConvert.DeserializeObject<List<WishListCookieItemVM>>(wishlistStr);
+                    var existingWishlistItems = wishListCookieItems.FirstOrDefault(x => x.HouseId == houseId);
+
+                    if(existingWishlistItems != null)
+                    {
+                        wishListCookieItems.Remove(existingWishlistItems);
+
+                    }
+                    else
+                    {
+                        return RedirectToAction("error", "home");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("error", "home");
+                }
+
+                var jsonStr = JsonConvert.SerializeObject(wishListCookieItems);
+                HttpContext.Response.Cookies.Append("wishList", jsonStr);
+
+                foreach (var item in wishListCookieItems)
+                {
+                    House house = _context.Houses.Include(x => x.HouseImages).FirstOrDefault(x => x.Id == item.HouseId);
+
+                    WishListItemVM wishListItem = new WishListItemVM
+                    {
+                        House = house,
+                    };
+
+
+                    wishList.WishListItems.Add(wishListItem);
+                }
+            }
+
+            return RedirectToAction("index","wishlist", wishList);
         }
     }
 }
