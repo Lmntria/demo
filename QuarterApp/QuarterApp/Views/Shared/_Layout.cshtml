@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="~/assets/css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="~/assets/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
+
 </head>
 
 <body>
@@ -855,11 +857,40 @@
     <!-- Main JS -->
     <script src="~/assets/js/main.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+
+         toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+
+          $(document).ready(function(){
+                if($("#toastr-error").length){
+                    toastr["error"]($("#toastr-error").val())
+                }
+          })
+    </script>
+    @RenderSection("Scripts",required:false)
+
     <script src="~/assets/js/custom.js"></script>
 
 
 
-    @RenderSection("Scripts",required:false)
 
 </body>
 </html>

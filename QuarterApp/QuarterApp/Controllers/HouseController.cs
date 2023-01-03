@@ -52,7 +52,7 @@ namespace QuarterApp.Controllers
             }
 
             if (!_context.Houses.Any(x => x.Id == houseId && x.StockStatus))
-                return NotFound();
+                return RedirectToAction("index", "home");
 
             WishListVM wishList = new WishListVM();
 

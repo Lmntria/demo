@@ -6,11 +6,15 @@
     fetch(url)
         .then(response => {
             if (!response.ok) {
-                alert("elave oluna bilmedi");
+                toastr["error"]("məhsul bitib!")
+                return;
             }
-            return response.text();
+            else {
+                toastr["success"]("məhsul səbətə əlavə edildi!")
+                return response.text();
+
+            }
         }).then(html => {
-            alert("elave olundu");
             $("#wishlist-block").html(html)
         })
 })
