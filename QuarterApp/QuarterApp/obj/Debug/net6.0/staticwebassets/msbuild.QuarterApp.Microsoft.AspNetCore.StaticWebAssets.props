@@ -7728,12 +7728,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\QuarterApp.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\040d2892-4004-4a9d-ac5a-6e7d83a67743CarParkingInside3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\0ef35990-4b0d-4dfa-9f90-b5673cdfdd4731.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/040d2892-4004-4a9d-ac5a-6e7d83a67743CarParkingInside3.jpg</RelativePath>
+      <RelativePath>uploads/houses/0ef35990-4b0d-4dfa-9f90-b5673cdfdd4731.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7742,14 +7742,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\040d2892-4004-4a9d-ac5a-6e7d83a67743CarParkingInside3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\0ef35990-4b0d-4dfa-9f90-b5673cdfdd4731.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\1d68bd84-3318-47ad-974b-64a39db1c99633.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg</RelativePath>
+      <RelativePath>uploads/houses/1d68bd84-3318-47ad-974b-64a39db1c99633.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7758,14 +7758,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\094c3fd5-7617-46f6-8f5e-18ff2e54e752house1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\1d68bd84-3318-47ad-974b-64a39db1c99633.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\2d0309d0-00e2-4100-85d2-81b16de7280fhouse1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\32bad68a-279e-40c7-b11a-bbce6294a2e234.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/2d0309d0-00e2-4100-85d2-81b16de7280fhouse1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/32bad68a-279e-40c7-b11a-bbce6294a2e234.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7774,14 +7774,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\2d0309d0-00e2-4100-85d2-81b16de7280fhouse1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\32bad68a-279e-40c7-b11a-bbce6294a2e234.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3cb8b3f0-534c-4238-8ad5-6e59b1b0997chouse2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3679dde8-1423-495f-a37c-c7262701d78633.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/3cb8b3f0-534c-4238-8ad5-6e59b1b0997chouse2.jpg</RelativePath>
+      <RelativePath>uploads/houses/3679dde8-1423-495f-a37c-c7262701d78633.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7790,14 +7790,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3cb8b3f0-534c-4238-8ad5-6e59b1b0997chouse2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3679dde8-1423-495f-a37c-c7262701d78633.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3fdb2649-08a1-4725-9f5a-09be85ead9aehouse1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3a6d9c4a-9bea-4a2c-baa2-53f63d552b0e34.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/3fdb2649-08a1-4725-9f5a-09be85ead9aehouse1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/3a6d9c4a-9bea-4a2c-baa2-53f63d552b0e34.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7806,14 +7806,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3fdb2649-08a1-4725-9f5a-09be85ead9aehouse1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\3a6d9c4a-9bea-4a2c-baa2-53f63d552b0e34.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\529f1fb3-912b-41f3-8977-b631fefa13da32.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg</RelativePath>
+      <RelativePath>uploads/houses/529f1fb3-912b-41f3-8977-b631fefa13da32.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7822,14 +7822,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\42db14cd-45d4-4213-8d3f-29dc5805f453house1inside.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\529f1fb3-912b-41f3-8977-b631fefa13da32.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\5c9c794c-6f12-45f3-82a5-3b78cb4e95d3house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\58c2e932-549e-4121-9760-f9445be26d3135.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/5c9c794c-6f12-45f3-82a5-3b78cb4e95d3house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/58c2e932-549e-4121-9760-f9445be26d3135.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7838,14 +7838,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\5c9c794c-6f12-45f3-82a5-3b78cb4e95d3house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\58c2e932-549e-4121-9760-f9445be26d3135.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\58ecdae8-76a9-4d50-bbff-c73acf23dc9a32.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/58ecdae8-76a9-4d50-bbff-c73acf23dc9a32.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7854,14 +7854,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\654dfe73-d3ab-4ec9-a500-4d81e91d49f7house1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\58ecdae8-76a9-4d50-bbff-c73acf23dc9a32.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\71cf3b63-a910-4b0e-8820-c998dccb2921house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\59c94ffb-aea9-4b64-a107-9cf559dd474034.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/71cf3b63-a910-4b0e-8820-c998dccb2921house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/59c94ffb-aea9-4b64-a107-9cf559dd474034.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7870,14 +7870,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\71cf3b63-a910-4b0e-8820-c998dccb2921house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\59c94ffb-aea9-4b64-a107-9cf559dd474034.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\87bf6fcf-620c-47af-885e-5be08e2ab048house2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\76eb6f74-b183-448e-b6ac-ae162b124463house3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/87bf6fcf-620c-47af-885e-5be08e2ab048house2.jpg</RelativePath>
+      <RelativePath>uploads/houses/76eb6f74-b183-448e-b6ac-ae162b124463house3.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7886,14 +7886,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\87bf6fcf-620c-47af-885e-5be08e2ab048house2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\76eb6f74-b183-448e-b6ac-ae162b124463house3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\9473daf7-0cce-4385-b5bc-cec574325cbbCarParkingInside2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\782c0da9-da47-40ba-9b53-77538b4fc28c35.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/9473daf7-0cce-4385-b5bc-cec574325cbbCarParkingInside2.jpg</RelativePath>
+      <RelativePath>uploads/houses/782c0da9-da47-40ba-9b53-77538b4fc28c35.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7902,14 +7902,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\9473daf7-0cce-4385-b5bc-cec574325cbbCarParkingInside2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\782c0da9-da47-40ba-9b53-77538b4fc28c35.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ad923e40-ad3e-4850-8166-a8dc50e5400ehouse1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\840a66d4-08b8-41c8-ac1a-685ad074e98532.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/ad923e40-ad3e-4850-8166-a8dc50e5400ehouse1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/840a66d4-08b8-41c8-ac1a-685ad074e98532.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7918,14 +7918,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ad923e40-ad3e-4850-8166-a8dc50e5400ehouse1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\840a66d4-08b8-41c8-ac1a-685ad074e98532.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c2811784-8cf7-4fda-9255-b181653f7b9dhouse3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\860553ea-1f6c-48f5-b158-1f3e6434f97735.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/c2811784-8cf7-4fda-9255-b181653f7b9dhouse3.jpg</RelativePath>
+      <RelativePath>uploads/houses/860553ea-1f6c-48f5-b158-1f3e6434f97735.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7934,14 +7934,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c2811784-8cf7-4fda-9255-b181653f7b9dhouse3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\860553ea-1f6c-48f5-b158-1f3e6434f97735.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c473fff9-3cd5-4ded-b1a4-2690fb3d4fb4house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\8abb03e8-5e82-4f45-b312-feb951a7ddc432.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/c473fff9-3cd5-4ded-b1a4-2690fb3d4fb4house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/8abb03e8-5e82-4f45-b312-feb951a7ddc432.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7950,14 +7950,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c473fff9-3cd5-4ded-b1a4-2690fb3d4fb4house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\8abb03e8-5e82-4f45-b312-feb951a7ddc432.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c6216679-0545-4940-9681-eef1f7916ee6house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\8d02a063-8d7f-4d17-abf7-92660b31115833.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/c6216679-0545-4940-9681-eef1f7916ee6house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/8d02a063-8d7f-4d17-abf7-92660b31115833.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7966,14 +7966,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\c6216679-0545-4940-9681-eef1f7916ee6house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\8d02a063-8d7f-4d17-abf7-92660b31115833.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cc3411fe-a57a-4c20-ba52-7e9034189f0dhouse1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\94ac6bb4-0362-4bd5-ba43-ad5bba97f2c1indir (2).jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/cc3411fe-a57a-4c20-ba52-7e9034189f0dhouse1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/94ac6bb4-0362-4bd5-ba43-ad5bba97f2c1indir (2).jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7982,14 +7982,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cc3411fe-a57a-4c20-ba52-7e9034189f0dhouse1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\94ac6bb4-0362-4bd5-ba43-ad5bba97f2c1indir (2).jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cfaec773-19ec-45f0-9d0e-5f4fd4f4ffd9house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ac2bdaec-4416-4367-a7c2-6fac45f58e3431.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/cfaec773-19ec-45f0-9d0e-5f4fd4f4ffd9house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/ac2bdaec-4416-4367-a7c2-6fac45f58e3431.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -7998,14 +7998,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cfaec773-19ec-45f0-9d0e-5f4fd4f4ffd9house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ac2bdaec-4416-4367-a7c2-6fac45f58e3431.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cff8365a-548a-4953-b255-780128e627dbhouse1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\b06d7bf2-3160-45b7-b215-21110237058333.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/cff8365a-548a-4953-b255-780128e627dbhouse1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/b06d7bf2-3160-45b7-b215-21110237058333.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8014,14 +8014,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\cff8365a-548a-4953-b255-780128e627dbhouse1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\b06d7bf2-3160-45b7-b215-21110237058333.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d363f232-d2d5-43f0-aacb-ca118f369d89house3.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\b9642442-8b6f-441f-af7e-496ee609c5a2farm.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/d363f232-d2d5-43f0-aacb-ca118f369d89house3.jpg</RelativePath>
+      <RelativePath>uploads/houses/b9642442-8b6f-441f-af7e-496ee609c5a2farm.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8030,14 +8030,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d363f232-d2d5-43f0-aacb-ca118f369d89house3.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\b9642442-8b6f-441f-af7e-496ee609c5a2farm.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\bb9d85cf-2508-4f79-a626-c1bc9d5b86b834.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg</RelativePath>
+      <RelativePath>uploads/houses/bb9d85cf-2508-4f79-a626-c1bc9d5b86b834.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8046,14 +8046,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\e5c12c4b-67e0-4e2e-a61f-9370e3e64927house1inside2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\bb9d85cf-2508-4f79-a626-c1bc9d5b86b834.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f2c1c34a-6828-431d-9bd3-ed391f193f23CarParkingInside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\bbee085f-3000-4c66-989c-65e247b341f8house2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/f2c1c34a-6828-431d-9bd3-ed391f193f23CarParkingInside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/bbee085f-3000-4c66-989c-65e247b341f8house2.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8062,14 +8062,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f2c1c34a-6828-431d-9bd3-ed391f193f23CarParkingInside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\bbee085f-3000-4c66-989c-65e247b341f8house2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f3dedea4-e853-4a1b-8346-bf1631357251house1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d2807e41-2bd3-4491-b274-ba40944b62ba33.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/f3dedea4-e853-4a1b-8346-bf1631357251house1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/d2807e41-2bd3-4491-b274-ba40944b62ba33.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8078,14 +8078,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f3dedea4-e853-4a1b-8346-bf1631357251house1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d2807e41-2bd3-4491-b274-ba40944b62ba33.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ff2de05e-eca6-4778-be79-becc30117163house1inside1.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d732ad0f-f38d-423a-9702-2f5ae9e3e20b31.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>QuarterApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/QuarterApp</BasePath>
-      <RelativePath>uploads/houses/ff2de05e-eca6-4778-be79-becc30117163house1inside1.jpg</RelativePath>
+      <RelativePath>uploads/houses/d732ad0f-f38d-423a-9702-2f5ae9e3e20b31.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -8094,7 +8094,119 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ff2de05e-eca6-4778-be79-becc30117163house1inside1.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\d732ad0f-f38d-423a-9702-2f5ae9e3e20b31.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ed182d28-b8ac-40dd-b387-428930dccab834.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/ed182d28-b8ac-40dd-b387-428930dccab834.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\ed182d28-b8ac-40dd-b387-428930dccab834.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f0f27ea5-253a-4a75-9a33-42eeb1e1804135.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/f0f27ea5-253a-4a75-9a33-42eeb1e1804135.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f0f27ea5-253a-4a75-9a33-42eeb1e1804135.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f24565be-582c-438b-ae1d-766127e4bb7531.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/f24565be-582c-438b-ae1d-766127e4bb7531.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\f24565be-582c-438b-ae1d-766127e4bb7531.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fb143772-ed4d-49c0-b300-a53f803f28a2house1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/fb143772-ed4d-49c0-b300-a53f803f28a2house1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fb143772-ed4d-49c0-b300-a53f803f28a2house1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fc4840d7-0eba-414d-a548-f9ce44f187ed35.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/fc4840d7-0eba-414d-a548-f9ce44f187ed35.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fc4840d7-0eba-414d-a548-f9ce44f187ed35.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fdeb1710-2455-4206-bc96-db3cde5a347e31.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/fdeb1710-2455-4206-bc96-db3cde5a347e31.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fdeb1710-2455-4206-bc96-db3cde5a347e31.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fe9f9085-35a0-4ac7-a532-98e517e042f232.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>QuarterApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/QuarterApp</BasePath>
+      <RelativePath>uploads/houses/fe9f9085-35a0-4ac7-a532-98e517e042f232.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\houses\fe9f9085-35a0-4ac7-a532-98e517e042f232.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\ourServices\3fac6caa-8c1c-4a70-beba-da728a40142921.png))">
       <SourceType>Package</SourceType>

@@ -6,6 +6,5 @@ namespace QuarterApp.ViewModels
         public House House { get; set; }
         public List<Amenity> Amenities { get; set; }
         public List<House> Houses { get; set; }
-        public CommentCreateVM CommentCreateVM { get; set; }
     }
 }

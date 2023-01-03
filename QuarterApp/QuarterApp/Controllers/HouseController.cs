@@ -20,6 +20,7 @@ namespace QuarterApp.Controllers
             _manager= manager;
         }
         public IActionResult Detail(int id)
+        
         {
 
             House house = _context.Houses
@@ -36,61 +37,15 @@ namespace QuarterApp.Controllers
             {
                 House = house,
                 Amenities=_context.Amenities.ToList(),
-                Houses=_context.Houses.ToList(),
+                Houses=_context.Houses.Where(x=>x.DiscountPercantage>0)
+                .Include(x => x.City)
+                .Include(x => x.HouseImages)
+                .Include(x => x.HouseAmenities).ThenInclude(x => x.Amenity)
+                .Include(x => x.Manager).ToList(),
             };
 
 
             return View(detailVM);
-        }
-        [Authorize("Member")]
-        [HttpPost]
-        public async Task<IActionResult> Commment(CommentCreateVM commentVM)
-        {
-            AppUser user = await _manager.FindByNameAsync(User.Identity.Name);
-
-            if (user == null)
-                return RedirectToAction("login", "account");
-
-            House house = _context.Houses
-                .Include(x => x.City)
-                .Include(x => x.HouseImages)
-                .Include(x => x.HouseAmenities).ThenInclude(x => x.Amenity)
-                .Include(x => x.Manager)
-                .Include(x => x.Comments).ThenInclude(x => x.AppUser)
-                .FirstOrDefault(x => x.Id == commentVM.HouseId);
-
-
-            if (house == null)
-                return RedirectToAction("error", "home");
-
-            if (!ModelState.IsValid)
-            {
-                HouseDetailVM houseDetail = new HouseDetailVM
-                {
-                    House = house,
-                    CommentCreateVM = commentVM
-                };
-
-                return View("detail", houseDetail);
-            }
-
-
-            HouseComment newComment = new HouseComment
-            {
-                Text = commentVM.Text,
-                AppUserId = user.Id,
-                HouseId = house.Id,
-
-            };
-
-            house.Comments.Add(newComment);
-            await _context.SaveChangesAsync();
-
-
-
-            return RedirectToAction("detail", new { id = house.Id });
-
-
         }
 
         public async Task<IActionResult> AddToWishList(int houseId)
