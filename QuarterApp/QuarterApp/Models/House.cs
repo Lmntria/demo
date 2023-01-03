@@ -55,5 +55,6 @@ namespace QuarterApp.Models
         public List<HouseAmenity>? HouseAmenities { get; set; }
         [NotMapped]
         public List<int>? AmenityIds { get; set; } = new List<int>();
+        public List<HouseComment>? Comments { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -40,6 +41,56 @@ namespace QuarterApp.Controllers
 
 
             return View(detailVM);
+        }
+        [Authorize("Member")]
+        [HttpPost]
+        public async Task<IActionResult> Commment(CommentCreateVM commentVM)
+        {
+            AppUser user = await _manager.FindByNameAsync(User.Identity.Name);
+
+            if (user == null)
+                return RedirectToAction("login", "account");
+
+            House house = _context.Houses
+                .Include(x => x.City)
+                .Include(x => x.HouseImages)
+                .Include(x => x.HouseAmenities).ThenInclude(x => x.Amenity)
+                .Include(x => x.Manager)
+                .Include(x => x.Comments).ThenInclude(x => x.AppUser)
+                .FirstOrDefault(x => x.Id == commentVM.HouseId);
+
+
+            if (house == null)
+                return RedirectToAction("error", "home");
+
+            if (!ModelState.IsValid)
+            {
+                HouseDetailVM houseDetail = new HouseDetailVM
+                {
+                    House = house,
+                    CommentCreateVM = commentVM
+                };
+
+                return View("detail", houseDetail);
+            }
+
+
+            HouseComment newComment = new HouseComment
+            {
+                Text = commentVM.Text,
+                AppUserId = user.Id,
+                HouseId = house.Id,
+
+            };
+
+            house.Comments.Add(newComment);
+            await _context.SaveChangesAsync();
+
+
+
+            return RedirectToAction("detail", new { id = house.Id });
+
+
         }
 
         public async Task<IActionResult> AddToWishList(int houseId)
