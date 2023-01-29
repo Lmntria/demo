@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\QuarterApp.props" />
+  <Import Project="../build/QuarterApp.props" />
 </Project>

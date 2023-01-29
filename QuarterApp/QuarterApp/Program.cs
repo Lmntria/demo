@@ -7,10 +7,17 @@ using QuarterApp.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAuthentication()
+    .AddGoogle(options =>
+    {
+        options.ClientId = "920537642498-afsp7ep1ui1h7fd64lkopasn1v9c5a66.apps.googleusercontent.com";
+        options.ClientSecret = "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";
+        options.SignInScheme = IdentityConstants.ExternalScheme;
+    });
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<QuarterDbContext>(opt =>
 {
-	opt.UseSqlServer(@"Server=DESKTOP-CGIBQ3V\SQLEXPRESS01;Database=QuarterAppDb;Trusted_Connection=TRUE");
+	opt.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:Default").Value);
 });
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
@@ -40,6 +47,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 		return Task.CompletedTask;
 	};
 });
+
+
 
 
 

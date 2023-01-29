@@ -56,3 +56,8 @@ $(document).on("click", ".delete-product", function (e) {
         }
     })
 })
+
+let preloader=document.getElementById("preloader")
+window.addEventListener("load", () => {
+    preloader.style.display="none"
+})

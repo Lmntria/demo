@@ -15,12 +15,22 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.13" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\uploads\houses\" />
     <Folder Include="wwwroot\uploads\users\" />
     <Folder Include="wwwroot\uploads\ourServices\" />
+    <Folder Include="wwwroot\assets\img\loader\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\assets\img\loader\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Microsoft.AspNetCore.Authentication.Google" />
+    <None Remove="Microsoft.AspNetCore.Authentication.OAuth" />
+  </ItemGroup>
 </Project>
